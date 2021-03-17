@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites App</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            display: table;
+            border-spacing: 5px;
+        }
+        form p {
+            display: table-row;
+        }
+        form label {
+            display: table-cell;
+            text-align: right;
+        }
+        form input {
+            display: table-cell;
+        }
+        span.comment {
+            font-size: 80%;
+            color: #777777;
+        }
+        span.tags {
+            font-size: 80%;
+            color: rgb(48, 99, 170);
+        }
+    </style>
+
+    <h1>Tag and save your Favorites</h1>
+    <form action="">
+        <fieldset>
+            <legend>Add a new favorite:</legend>
+            <p>
+                <label for="url">URL:</label>
+                <input type="text" id="url" size="60" placeholder="https://codebitsacademy.com">
+            </p>
+            <p>
+                <label for="title">Title:</label>
+                <input type="text" id="title" size="60" placeholder="Codebits Academy">
+            </p>
+            <p>
+                <label for="comment">Comment: </label>
+                <input type="text" id="comment" size="60" placeholder="What do you think of this link?">
+            </p>
+          
+            <p>
+                <label for="tags">Tags:</label>
+                <input type="text" id="tags" size="60" placeholder="Enter tags seperated by commas">
+            </p>
+            <p>
+                <label for="addButton"></label>
+                <input type="button" id="addButton" value="Add link">
+            </p>
+        </fieldset>
+    </form>
+    <h2>List of favorites</h2>
+    <ul id="favorites"></ul>
+    <script src="js/web.js"></script>
+</body>
+</html>
